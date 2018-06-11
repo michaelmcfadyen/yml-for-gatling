@@ -8,22 +8,9 @@ This library only provides basic Gatling features through yml config files by de
 advanced features, do not use this library.  
 
 ### How To Run
-Run the gatling test in your preferred way. The library requires two properties to be passed in to the test.
+See [yaml-for-gatling demo](https://github.com/michaelmcfadyen/yml-for-gatling-demo)
 
-- gatling.base.url - base url of the target service ie. http://localhost:8080
-- gatling.yml.file - filename of the yml config file on classpath ie. example.yml
-
-When creating your simulation you will need to extend `YamlForGatling` instead of `Simulation`, The body of your class
-needs to invoke `run()`.
-
-Example simulation
-```scala
-class MySimulation extends YamlForGatling {
-  run()
-}
-```
-
-###Yml Config Format
+### Yml Config Format
 One yml config file represents one simulation. The object contains the following fields:
 
 - title (String) - name of the simulation
