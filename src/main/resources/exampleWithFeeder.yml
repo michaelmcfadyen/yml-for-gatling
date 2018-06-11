@@ -1,0 +1,20 @@
+title: Yaml For Gatling Test
+ramp:
+  enabled: false
+scenarios:
+  - title: Test GET scenario
+    endpoint: /user
+    method: GET
+    targetTps: 10
+
+  - title: Test GET one user
+    endpoint: /user/${value}
+    method: GET
+    targetTps: 10
+    feeder:
+      - type: csv
+        file: example.csv
+      - type: ssv
+        file: ssv_example.csv
+
+maxDuration: PT1M

@@ -1,0 +1,14 @@
+title: Yaml For Gatling Test
+ramp:
+  enabled: false
+scenarios:
+  - title: Test GET scenario
+    endpoint: /user
+    method: GET
+    targetTps: 10
+  - title: Test GET one user
+    endpoint: /user/1
+    method: GET
+    targetTps: 10
+
+maxDuration: PT1M
