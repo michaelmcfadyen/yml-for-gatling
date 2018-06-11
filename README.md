@@ -78,16 +78,16 @@ The feeder section of the config defines a standard Gatling feeder to use. It ha
 
 ### Example yaml file with feeder
 ```yaml
-title: Yaml For Gatling Test With Feeder
-ramp:
-  enabled: false
-scenarios:
-  - title: Test GET one user
-    endpoint: /user/${value}
-    method: GET
-    targetTps: 10
-    feeder:
-      - type: csv
-        file: example.csv
+    title: Yaml For Gatling Test With Feeder
+    ramp:
+        enabled: false
+    scenarios:
+      - title: Test GET one user
+        endpoint: /user/${value}
+        method: GET
+        targetTps: 10
+        feeder:
+          - type: csv
+            file: example.csv
     maxDuration: PT1M
 ```    
