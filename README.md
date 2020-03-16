@@ -40,7 +40,9 @@ The feeder section of the config defines a standard Gatling feeder to use. It ha
 - type (csv/ssv/tsv) - the type of feeder
 - file (String) - the filename on the classpath to load data from
 
-### Example yaml file
+### Examples
+
+### Standard yaml file
 ```yaml
     title: Yaml For Gatling Test
     ramp:
@@ -58,7 +60,7 @@ The feeder section of the config defines a standard Gatling feeder to use. It ha
     
     maxDuration: PT1M
 ```    
-### Example yaml file with ramp disabled
+### Yaml file with ramp disabled
 ```yaml
     title: Yaml For Gatling Test
     ramp:
@@ -76,7 +78,7 @@ The feeder section of the config defines a standard Gatling feeder to use. It ha
     maxDuration: PT1M
 ```    
 
-### Example yaml file with feeder
+### Yaml file with feeder
 ```yaml
     title: Yaml For Gatling Test With Feeder
     ramp:
