@@ -15,7 +15,7 @@
         <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
         <gatling-plugin.version>2.2.4</gatling-plugin.version>
 
-        <jackson.version>2.9.8</jackson.version>
+        <jackson.version>2.10.3</jackson.version>
     </properties>
 
     <profiles>
